@@ -16,12 +16,11 @@ int *generateRoll() {
         randNum = rand() % 51;
 
         if (randNum <= 0 || randNum > 50) { // vérifie si le nombre est inférieur à 1 ou supérieur à 50
-            printf("");
+            ;
         } else {
             int j, duplicate = 0;
             for (j = 0; j < i; j++) { // vérifie si le nombre a déjà été choisi
                 if (randNums[j] == randNum) {
-                    printf("");
                     duplicate = 1;
                     break;
                 }
